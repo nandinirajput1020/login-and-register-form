@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\css.css">
+    <title>Sign Up</title>
+    <script>  
+        function validateform()
+        {  
+            var name=document.myform.name.value;  
+            var contact=document.myform.contact.value;
+            var x=document.myform.email.value;  
+            var atposition=x.indexOf("@");  
+            var dotposition=x.lastIndexOf(".");  
+            var password=document.myform.password.value;  
+              
+            if (name==null || name=="")
+            {  
+              alert("Name can't be blank");  
+              return false;  
+            }
+            else if(contact==null || contact=="" || contact.length!=10)
+            {
+                alert("Enter a 10 Digit Number.");
+                return false;
+            }
+            else if(atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length)
+            {
+                alert("Please enter a valid e-mail address");  
+                return false;  
+            }
+            else if(password.length<6)
+            {  
+              alert("Password must be at least 6 characters long.");  
+              return false;  
+            } 
+        }
+    </script>  
+</head>
+<body>
+    <div class="container">
+        <h1 id="center">Sign Up</h1>
+        <form name="myform" method="post" action="register.php" onsubmit="return validateform()">
+            <table>
+                <tr>
+                    <td>Name : </td>
+                    <td><input type="text" name="name" id="name" placeholder="Enter Your Name"></td>
+                </tr>
+                <tr>
+                    <td>Mobile : </td>
+                    <td><input type="number" name="contact" id="contact" placeholder="Enter Your Number"></td>
+                </tr>
+                <tr>
+                    <td>Email : </td>
+                    <td><input type="email" name="email" id="email" placeholder="Enter Your Email"></td>
+                </tr>
+                <tr>
+                    <td>Password : </td>
+                    <td><input type="password" name="password" id="password" placeholder="Enter Your Password"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><div id="center"><input type="submit" value="Submit" name="submit>">
+                        <input type="reset" name="reset" value="Reset"></div></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div id="center"><a href="login.html">Already a user??</a></div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+body
+{
+    background-image: url(https://previews.123rf.com/images/ookasan/ookasan1908/ookasan190800461/128641706-nature-green-leaves-wall-texture-of-the-tropical-forest-plant-on-black-background-.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1
+{
+    color: white;
+}
+
+#center
+{
+    text-align:center;
+}
+
+
+.container
+{
+    background: rgba(255,255,255,0.76);
+background: linear-gradient(90deg,rgba(255,255,255,0.76) 0%, rgba(36,209,36,0.8) 80%);
+background: -webkit-linear-gradient(90deg,rgba(255,255,255,0.76) 0%, rgba(36,209,36,0.8) 80%);
+background: -moz-linear-gradient(90deg,rgba(255,255,255,0.76) 0%, rgba(36,209,36,0.8) 80%);
+    margin: auto;
+    width: 50%;
+    border: 3px double rgb(255, 255, 255);
+    padding: 30px;
+    margin-top: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+table
+{
+    margin: auto;
+    margin-top: 50px;
+    width: 55%;
+    padding: 10px;
+    background-color: ivory;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px 0px rgba(58,199,74,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(58,199,74,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(58,199,74,0.75);
+}
+
+a
+{
+    text-decoration: none;
+    color: #177126;
+}
+
+input[type=submit], input[type=reset] 
+{
+    background-color: #58f873;
+    border: none;
+    color: rgb(20, 20, 20);
+    padding: 10px 16px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  input[type=text],input[type=number],input[type=password],input[type=email]
+  {
+    /* border-style: none; */
+      border-radius: 2px;
+      height:20px;
+      width: 200px;
+  }
